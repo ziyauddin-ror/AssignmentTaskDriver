@@ -1,0 +1,127 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/create_driver":
+    post:
+      summary: Creates a Driver
+      parameters: []
+      responses:
+        '200':
+          description: Driver created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                licence_id:
+                  type: string
+  "/drivers":
+    get:
+      summary: Drivers List
+      responses:
+        '200':
+          description: successful
+  "/drivers/{id}/add_cards":
+    parameters:
+    - name: id
+      in: path
+      description: driver_id
+      required: true
+      schema:
+        type: string
+    post:
+      summary: Driver Card Details
+      parameters: []
+      responses:
+        '200':
+          description: card created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                card_no:
+                  type: string
+                expiry_month:
+                  type: string
+                expiry_year:
+                  type: string
+                is_default:
+                  type: boolean
+  "/drivers/{id}/create_purchase_fuel":
+    parameters:
+    - name: id
+      in: path
+      description: driver_id
+      required: true
+      schema:
+        type: string
+    post:
+      summary: Purchase a fuel
+      parameters: []
+      responses:
+        '200':
+          description: Purchase fuel created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                payment_type:
+                  type: integer
+  "/pay_later_amounts":
+    get:
+      summary: Pay Later Wallet
+      responses:
+        '200':
+          description: successful
+  "/drivers/{id}/pay_later_transactions":
+    parameters:
+    - name: id
+      in: path
+      description: driver_id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Pay Later Transaction
+      responses:
+        '200':
+          description: Pay Later Transaction
+  "/drivers/{id}/is_paid_transaction":
+    parameters:
+    - name: id
+      in: path
+      description: driver_id
+      required: true
+      schema:
+        type: string
+    patch:
+      summary: Update Pay later Transactions to Paid
+      parameters: []
+      responses:
+        '200':
+          description: Mark Paid Transaction For Pay Later Transactions
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                transaction_ids:
+                  type: string
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost:3000/api/v1
