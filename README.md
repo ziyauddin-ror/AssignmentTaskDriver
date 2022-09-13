@@ -59,5 +59,6 @@ run below command
 rake rswag:specs:swaggerize 
 ```
 **DataBase Modeling Diagram**
+For ERdiagram I have use gem 'rails-erd'
 
 [erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
