@@ -1,9 +1,14 @@
-### Note
+** Note:-**
 In PurchaseFuel Model payment_type value is enum
 0 = paylater, 
 1 = card_type,
 2 = bank_account
-## Install
+
+**DataBase Modeling Diagram**
+For ERdiagram I have use gem 'rails-erd'
+
+[erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
+## Installation
 
 ### Clone the repository
 
@@ -13,19 +18,8 @@ cd AssignmentTaskDriver
 
 ```
 
-### Check your Ruby version
-
-```bash
-ruby -v
-```
-
-The ouput should start with something like `ruby 3.1.2`
-
-If not, install the right ruby version using rvm:
-
-```bash
-rvm install "ruby-3.1.2"
-```
+### Ruby version
+`ruby 3.1.2` require
 
 ### Install dependencies
 
@@ -58,7 +52,3 @@ run below command
 ```bash
 rake rswag:specs:swaggerize 
 ```
-**DataBase Modeling Diagram**
-For ERdiagram I have use gem 'rails-erd'
-
-[erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
