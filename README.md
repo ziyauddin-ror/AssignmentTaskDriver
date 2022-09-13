@@ -1,13 +1,16 @@
-** Note:-**
+**Note:-**
+
 In PurchaseFuel Model payment_type value is enum
 0 = paylater, 
 1 = card_type,
 2 = bank_account
 
 **DataBase Modeling Diagram**
+
 For ERdiagram I have use gem 'rails-erd'
 
 [erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
+
 ## Installation
 
 ### Clone the repository
