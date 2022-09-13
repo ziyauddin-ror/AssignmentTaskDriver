@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/103407544/189879706-f520865b-e430-444d
 ### Clone the repository
 
 ```bash
-https://github.com/ziyauddin-ror/AssignmentTaskDriver.git
+git clone https://github.com/ziyauddin-ror/AssignmentTaskDriver.git
 cd AssignmentTaskDriver
 
 ```
