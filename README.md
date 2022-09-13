@@ -1,7 +1,7 @@
 ### Note
 In PurchaseFuel Model payment_type value is enum
-0 = paylater 
-1 = card_type
+0 = paylater, 
+1 = card_type,
 2 = bank_account
 ## Install
 
