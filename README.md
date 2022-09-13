@@ -11,6 +11,10 @@ For ERdiagram I have use gem 'rails-erd'
 
 [erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
 
+**Demo Video**
+
+https://user-images.githubusercontent.com/103407544/189879706-f520865b-e430-444d-9609-fcee37257b4b.mp4
+
 ## Installation
 
 ### Clone the repository
