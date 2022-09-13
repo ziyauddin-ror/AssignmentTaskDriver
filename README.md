@@ -1,24 +1,64 @@
-# AssignmentTaskDriver
+### Note
+In PurchaseFuel Model payment_type value is enum
+0 = paylater 
+1 = card_type
+2 = bank_account
+## Install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Clone the repository
 
-Things you may want to cover:
+```bash
+https://github.com/ziyauddin-ror/AssignmentTaskDriver.git
+cd AssignmentTaskDriver
 
-* Ruby version
+```
 
-* System dependencies
+### Check your Ruby version
 
-* Configuration
+```bash
+ruby -v
+```
 
-* Database creation
+The ouput should start with something like `ruby 3.1.2`
 
-* Database initialization
+If not, install the right ruby version using rvm:
 
-* How to run the test suite
+```bash
+rvm install "ruby-3.1.2"
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Install dependencies
 
-* Deployment instructions
+Using [Bundler](https://github.com/bundler/bundler):
 
-* ...
+```bash
+bundle install
+```
+
+### Update database.yml file
+In database.yml file, edit the database configuration as required.
+
+### Initialize the database
+
+```ruby
+rake db:create db:migrate
+```
+
+### Serve
+
+```ruby
+rails s
+```
+And now you can visit the site with the URL http://localhost:3000/api-docs/index.html
+
+### Spec Info
+if you create changes in spec folder
+run below command
+
+```bash
+rake rswag:specs:swaggerize 
+```
+**DataBase Modeling Diagram**
+```bash
+[erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
+```
