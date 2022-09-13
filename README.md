@@ -59,6 +59,5 @@ run below command
 rake rswag:specs:swaggerize 
 ```
 **DataBase Modeling Diagram**
-```bash
+
 [erd.pdf](https://github.com/ziyauddin-ror/AssignmentTaskDriver/files/9555262/erd.pdf)
-```
